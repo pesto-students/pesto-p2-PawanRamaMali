@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+  }
+  body{
+      padding: 0;
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+  }
+  nav{
+    background: #F0F0F0;
+    height: 90vh;
+    width: 4vw;
+    position: fixed;
+    padding: 3rem 0;
+  }
+  nav ul{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        justify-content: space-between;
+        height: 100%;
+        align-items: center;
+  }
+  .cattyboard-body{
+      height: 90vh;
+      padding-left: 4vw;
+  }
+  .cattyboard-top{
+    background: #454545;
+    height: 35vh;
+    padding: 3rem 3rem 3rem 2vw;
+    display: flex;
+  }
+  .cattyboard-top__title{
+      height: 100%;
+      color: #fff;
+      padding-left: 3vw;
+      position: relative;
+  }
+  .cattyboard-top__title--main{
+      font-size: 1.25rem;
+  }
+  .cattyboard-top__title--sub{
+      font-size: 0.75rem;
+      margin-top: 0.6rem;
+      line-height: 1.1rem;
+  }
+  .cattyboard-top__title--footer{
+    position: absolute;
+    bottom: 0;
+    font-size: 0.75rem;
+  }
+  .cattyboard-top__title--footer span i{
+      margin-right: 0.2rem;
+  }
+  .cattyboard-top__title--footer span{
+      margin-right: 1.2rem;
+  }
+  .cattyboard-songs ul{
+      list-style: none;
+      padding:2rem 0;
+        margin: 0;
+  }
+  .cattyboard-songs li{
+    height: 6vh;
+    display: flex;
+    align-items: center;
+    margin-left: 0.75rem;
+    background: #F0F0F0;
+  }
+  .cattyboard-songs li:nth-child(odd) { background: #fff; }
+  .cattyboard-song{
+    display: flex;
+    padding: 0 0.8rem;
+  }
+  .cattyboard-song span{
+      margin-right: 3rem;
+      width: 12rem;
+  }
+  .cattyboard-song button{
+      margin-left: 5rem;
+      background: #fff;
+      color: blue;
+      border: 1px solid #646161;
+  }
+
+  footer{
+      background: #546398;
+      height: 10vh;
+      display: flex;
+      color: #fff;
+  }
+  .footer-left{
+      display: flex;
+      align-items: center;
+      width: 40%;
+      padding: 0 2rem;
+      font-size: 14px;
+  }
+  .footer-left img{
+      height: 7vh;
+  }
+  .footer-left__title{
+      padding-left: 1rem;
+      line-height: 1.8rem;
+  }
+  .footer-right{
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    align-items: center;
+    padding: 0 2rem;
+  }
+
+  @media (max-width:786px) {
+    .cattyboard-top{
+        padding: 3rem 0.5rem 3rem 2vw;
+    }
+    .cattyboard-top__title--main{
+        font-size: 1rem;
+    }
+    .cattyboard-songs li{
+        height: 10vh;
+    }
+    .cattyboard-song{
+       font-size: 0.75rem
+      }
+    .cattyboard-song span{
+        margin-right: 0.5rem;
+        width: 5rem;
+    }
+    .cattyboard-song button{
+        margin-left: 0;
+    }
+  }
